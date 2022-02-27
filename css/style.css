@@ -1,0 +1,359 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #F5F5F5;
+}
+
+/*CSS header */
+
+header {
+    padding: 20px 0;
+}
+
+.box {
+    width: 940px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.logo-text {
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+nav {
+    position: absolute;
+    top: -1px;
+    right: 0;
+}
+
+nav li, .home li {
+    display: inline;
+    margin: 0 15px 0 0;
+}
+
+nav a, .home a {
+    *text-transform: uppercase;
+
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+
+    color: #464646;
+    
+    text-decoration: none;
+}
+
+nav a:hover {
+    padding-bottom: 5px;
+    box-shadow: inset 0 -2px 0 0 #464646;
+}
+
+
+/*CSS Home */
+
+.home {
+    padding: 3em 5em;
+    *background-color: gray;
+    width: 940px;
+    position: relative;
+    height: 308px;
+    margin: 0 auto;
+}
+
+.my-image {
+    width: 298px;
+    float: right;
+    margin: 0 20px 20px 0;
+}
+
+.i-am {
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 42px;
+    line-height: 49px;
+
+    color: #464646;
+}
+
+.home > p {
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+
+    color: #464646;
+
+    padding-top: 20px;
+}
+
+.social-row {
+    padding-top: 20px;
+    text-align: left;
+    *padding: 0;
+}
+
+
+/*CSS About me */
+
+.about-me {
+    background-color: #EAF2FD;
+}
+
+.about-me div {
+    padding: 2em 0;
+    *background-color: #FEFEFE;
+    width: 940px;
+    margin: 0 auto;
+}
+
+.about-me > div > p {
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+
+    color: #464646;
+
+    padding: 10px 0 20px 0;
+}
+
+.section-title {
+    *padding: 2em 0;
+
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 38px;
+
+    /* identical to box height */
+    *text-align: center;
+
+    /* Preto/100% */
+    color: #464646;
+}
+
+
+/*CSS Skills */
+
+section > ul {
+    width: 940px;
+    margin: 0 auto;
+    *padding: 50px;
+    text-align: center;
+}
+
+.training img {
+    width: 80%;
+}
+
+.section-title {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.skills, .hobbies, .training {
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px;
+}
+
+.skills li, .hobbies li, .training li {
+    display: inline-block;
+    *text-align: center;
+    width: 30%;
+    *height: 170px;
+    vertical-align: top;
+    margin: 0 1.485%;
+    padding: 70px 20px;
+    box-sizing: border-box;
+    *border: 2px solid #000000;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.skills li:hover, .hobbies li:hover, .training li:hover  {
+    border-color: #C78C19;
+}
+
+.skills li:active, .hobbies li:active .training li:active {
+    border-color: #088c19;
+}
+
+.skills h2, .hobbies li h2, .training h2 {
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    height: 40px;
+}
+
+.skills li:hover h2, .hobbies li h2:hover, .training li:hover h2 {
+    font-size: 17px;
+}
+
+li img {
+    margin-bottom: 10px;
+}
+
+
+/*CSS Hobbies */
+
+.hobbies > li > img {
+    width: 32px;
+}
+
+/*CSS Academic training */
+
+.training li {
+    text-align: center;
+}
+
+.training li h2,
+.training li p {
+    text-align: left;
+}
+
+/*CSS Professional experience*/
+
+.projects {
+    *height: 400px;
+    *justify-content: center;
+}
+
+.projects > div {
+    *clear: left;
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px;
+}
+
+.projects img {
+    width: 60%;
+    display: inline-block;
+    vertical-align: top;
+    padding: 10px 0 10px 0;
+}
+
+.projects > div > div {
+    display: inline-block;
+    width: 35%;
+    margin-top: 90px;
+}
+
+.decoder{
+    float: right;
+}
+
+.projects h3 {
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 26px;
+
+    /* Preto/100% */
+    color: #464646;
+
+    margin-bottom: 10px;
+
+}
+
+.repository-btn {
+    color: #2A7AE4;
+    padding: 15px 25px;
+    text-decoration: none;
+
+    border: 1px solid #2A7AE4;
+    box-sizing: border-box;
+
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.see-demo-btn {
+    background-color: #2A7AE4;
+    color: #FFFFFF;
+    padding: 15px 25px;
+    text-decoration: none;
+}
+
+
+/*CSS Contact*/
+
+section .contact {
+    width: 940px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.contact h2 {
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 38px;
+
+    color: #464646;
+}
+
+form {
+    margin: 25px 0;
+}
+
+form label {
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+
+.input-padron {
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px; 
+    width: 45%;
+}
+
+.img-contact {
+    width: 420px;
+    float: left;
+    margin: 0 20px 20px 0;
+}
+
+.enviar {
+    width: 15%;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: #FFFFFF;
+    background-color: #2A7AE4;
+    border: none;
+    border-radius: 5px;
+    transition: 1s all;
+    cursor: pointer;
+}
+
+.enviar:hover {
+    background-color: #2A7AE4;;
+    transform: scale(1.2);  
+}
+
+
+/*CSS footer*/
+
+footer {
+    text-align: center;
+    *background-image: url("images/bg.jpg");
+    padding: 20px;
+}
