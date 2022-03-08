@@ -1,179 +1,192 @@
 body {
-    font-family: 'Montserrat', sans-serif;
     background-color: #F5F5F5;
+    font-family: 'Montserrat', sans-serif;
 }
+
 
 /*CSS header */
 
-header {
-    padding: 20px 0;
+.header {
+	*background-color: #FFF;
+	padding: 20px 0;
 }
 
-.box {
-    width: 940px;
-    position: relative;
-    margin: 0 auto;
+.container {
+	margin: 0 auto;
+	width: 80%;
 }
 
-.logo-text {
+.header .container {
+	align-items: center;
+	display: flex;
+	justify-content: space-between;
+}
+
+.header-titulo {
+    color: #464646;
     font-family: Raleway;
+    font-size: 16px;
     font-style: normal;
     font-weight: bold;
-    font-size: 16px;
     line-height: 19px;
+	margin-bottom: 20px;
 }
 
-nav {
-    position: absolute;
-    top: -1px;
-    right: 0;
+.header-titulo a {
+	color: inherit;
+	text-decoration: none;
 }
 
-nav li, .home li {
-    display: inline;
-    margin: 0 15px 0 0;
-}
-
-nav a, .home a {
-    *text-transform: uppercase;
+.header-nav-link {
+	color: #464646;
+	display: block;
+    margin: 10px;  /* */
+	margin-bottom: 10px;
+	*padding: 10px;
+    padding-bottom: 5px;
+	text-decoration: none;
+	transition: .5s;
 
     font-family: Raleway;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 19px;
-
-    color: #464646;
-    
-    text-decoration: none;
 }
 
-nav a:hover {
-    padding-bottom: 5px;
+.header-nav {
+    display: flex;
+}
+
+.header-nav-link:hover {
     box-shadow: inset 0 -2px 0 0 #464646;
 }
 
 
-/*CSS Home */
+/*CSS main */
 
-.home {
-    padding: 3em 5em;
-    *background-color: gray;
-    width: 940px;
-    position: relative;
-    height: 308px;
-    margin: 0 auto;
+.contenidoPrincipal .container {
+    align-items: center;
+	display: flex;
+    flex-direction: row-reverse;
+    margin-top: 10px;
 }
 
-.my-image {
-    width: 298px;
-    float: right;
+.contenidoPrincipal-image {
     margin: 0 20px 20px 0;
+    width: 298px;
 }
 
-.i-am {
+.contenidoPrincipal-presentacion-titulo {
+    color: #464646;
     font-family: Raleway;
+    font-size: 42px;
     font-style: normal;
     font-weight: bold;
-    font-size: 42px;
     line-height: 49px;
-
-    color: #464646;
 }
 
-.home > p {
+.contenidoPrincipal-presentacion-descripcion {
+    color: #464646;
     font-family: Raleway;
+    font-size: 18px;
     font-style: normal;
     font-weight: normal;
-    font-size: 18px;
     line-height: 21px;
+    padding-top: 20px;
+}
 
+.contenidoPrincipal-presentacion-redes {
+    display: flex;
+}
+
+.contenidoPrincipal-presentacion-redes-link {
+    margin: 2% 5% 0 0;
+}
+
+.contenidoPrincipal-presentacion-redes-link a {
     color: #464646;
-
-    padding-top: 20px;
+    font-family: Raleway;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 19px;
+    text-decoration: none;
 }
 
-.social-row {
-    padding-top: 20px;
-    text-align: left;
-    *padding: 0;
-}
 
+/*CSS main > aboutMe */
 
-/*CSS About me */
-
-.about-me {
+.aboutMe {
     background-color: #EAF2FD;
 }
 
-.about-me div {
-    padding: 2em 0;
-    *background-color: #FEFEFE;
-    width: 940px;
-    margin: 0 auto;
+.aboutMe .container {
+    align-items: initial;
+    flex-direction: column;
+    padding: 52px 0 52px 0;
 }
 
-.about-me > div > p {
+.aboutMe-titulo {
+    color: #464646;
     font-family: Raleway;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 38px;
+}
+
+.aboutMe-descripcion {
+    color: #464646;
+    font-family: Raleway;
+    font-size: 16px;
     font-style: normal;
     font-weight: normal;
-    font-size: 16px;
     line-height: 19px;
-
-    color: #464646;
-
     padding: 10px 0 20px 0;
 }
 
-.section-title {
-    *padding: 2em 0;
 
+/*CSS main > skills */
+
+.skills .container {
+    flex-direction: column;
+    align-items: initial;
+	text-align: center;
+}
+
+.subtitulo {
+    color: #464646;
     font-family: Raleway;
+    font-size: 32px;
     font-style: normal;
     font-weight: bold;
-    font-size: 32px;
     line-height: 38px;
-
-    /* identical to box height */
-    *text-align: center;
-
-    /* Preto/100% */
-    color: #464646;
+    margin-top: 100px;
 }
 
-
-/*CSS Skills */
-
-section > ul {
-    width: 940px;
-    margin: 0 auto;
-    *padding: 50px;
-    text-align: center;
+.skills-skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
-.training img {
-    width: 80%;
+.skills-skills-list {
+    align-items: initial;
+    *width: 33%;
+    padding: 20px 0 15px 0;
+    text-align: left;
 }
 
-.section-title {
-    text-align: center;
-    margin-top: 20px;
-}
-
-.skills, .hobbies, .training {
-    width: 940px;
-    margin: 0 auto;
-    padding: 50px;
-}
-
-.skills li, .hobbies li, .training li {
+.skills-skills-list {
     display: inline-block;
     *text-align: center;
-    width: 30%;
+    width: 17%;
     *height: 170px;
     vertical-align: top;
     margin: 0 1.485%;
-    padding: 70px 20px;
+    padding: 10px 20px;
+    padding-top: 80px;
     box-sizing: border-box;
     *border: 2px solid #000000;
     background-color: #FFFFFF;
@@ -182,15 +195,102 @@ section > ul {
     text-align: left;
 }
 
-.skills li:hover, .hobbies li:hover, .training li:hover  {
-    border-color: #C78C19;
+.skills-skills-list-nombre {
+    color: #464646;
+    font-family: Raleway;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    padding-top: 10px;
 }
 
-.skills li:active, .hobbies li:active .training li:active {
-    border-color: #088c19;
+
+/*CSS main > hobbies */
+
+.hobbies .container {
+    flex-direction: column;
+    align-items: initial;
+	text-align: center;
 }
 
-.skills h2, .hobbies li h2, .training h2 {
+.hobbies-hobbies {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.hobbies-hobbies-list {
+    align-items: initial;
+    *width: 33%;
+    padding: 20px 0 15px 0;
+    text-align: left;
+}
+
+.hobbies-hobbies-list {
+    display: inline-block;
+    *text-align: center;
+    width: 17%;
+    *height: 170px;
+    vertical-align: top;
+    margin: 0 1.485%;
+    padding: 10px 20px;
+    padding-top: 80px;
+    box-sizing: border-box;
+    *border: 2px solid #000000;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.hobbies-hobbies-list-img {
+    width: 50px;
+}
+
+.hobbies-hobbies-list-nombre {
+    color: #464646;
+    font-family: Raleway;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    padding-top: 10px;
+}
+
+
+/*CSS main > training */
+
+.training .container {
+    flex-direction: column;
+}
+
+.training-training {
+    display: flex;
+}
+
+.training-training-list {
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    box-sizing: border-box;
+    display: inline-block;
+    margin: 0 1.485%;
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    padding-top: 30px;
+    text-align: center;
+    vertical-align: top;
+    width: 33%;
+}
+
+.training-training-list-titulo,
+.training-training-list-description {
+    text-align: left;
+}
+
+.training-training-list-titulo {
     font-family: Raleway;
     font-style: normal;
     font-weight: bold;
@@ -199,90 +299,57 @@ section > ul {
     height: 40px;
 }
 
-.skills li:hover h2, .hobbies li h2:hover, .training li:hover h2 {
-    font-size: 17px;
-}
-
-li img {
-    margin-bottom: 10px;
+.training-training-list-img {
+    width: 150px;
+    padding-bottom: 10px;
 }
 
 
-/*CSS Hobbies */
-
-.hobbies > li > img {
-    width: 32px;
+/*CSS main > projects */
+.projects .container {
+    flex-direction: column;
 }
 
-/*CSS Academic training */
-
-.training li {
-    text-align: center;
+.projects-project {
+    align-items: center;
+    display: flex;
 }
 
-.training li h2,
-.training li p {
-    text-align: left;
+.projects-project {
+    align-items: center;
+    display: flex;
+    padding-top: 20px;
 }
 
-/*CSS Professional experience*/
-
-.projects {
-    *height: 400px;
-    *justify-content: center;
+.hangman {
+    flex-direction: row-reverse;
 }
 
-.projects > div {
-    *clear: left;
-    width: 940px;
-    margin: 0 auto;
-    padding: 50px;
-}
-
-.projects img {
+.projects-project-img {
     width: 60%;
-    display: inline-block;
-    vertical-align: top;
-    padding: 10px 0 10px 0;
 }
 
-.projects > div > div {
-    display: inline-block;
-    width: 35%;
-    margin-top: 90px;
-}
-
-.decoder{
-    float: right;
-}
-
-.projects h3 {
+.projects-projects-list-titulo {
+    color: #464646;
     font-family: Raleway;
+    font-size: 22px;
     font-style: normal;
     font-weight: bold;
-    font-size: 22px;
     line-height: 26px;
-
-    /* Preto/100% */
-    color: #464646;
-
     margin-bottom: 10px;
-
 }
 
-.repository-btn {
+.projects-projects-list-repository-btn {
     color: #2A7AE4;
-    padding: 15px 25px;
-    text-decoration: none;
-
     border: 1px solid #2A7AE4;
     box-sizing: border-box;
-
     display: inline-block;
     margin-top: 10px;
+    padding: 15px 25px;
+    text-decoration: none;
 }
 
-.see-demo-btn {
+.projects-projects-list-see-demo-btn {
     background-color: #2A7AE4;
     color: #FFFFFF;
     padding: 15px 25px;
@@ -290,61 +357,49 @@ li img {
 }
 
 
-/*CSS Contact*/
+/*CSS main > contact form */
 
-section .contact {
-    width: 940px;
-    margin: 0 auto;
-    padding: 20px;
+.contact .container {
+    flex-direction: initial;
+    margin-top: 20px;
 }
 
-.contact h2 {
-    font-family: Raleway;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 32px;
-    line-height: 38px;
-
-    color: #464646;
+.contact-form-form {
+    display: flex;
+    flex-direction: column;
+    padding: 25px 0 0 10px;
 }
 
-form {
-    margin: 25px 0;
+.subtitulo {
+    margin-top: auto;
 }
 
-form label {
-    display: block;
+.contact-form-form-label {
     font-size: 20px;
     margin: 0 0 10px;
 }
 
-.input-padron {
+.contact-form-form-input-padron {
     display: block;
-    margin: 0 0 20px;
+    margin: 0 0 25px;
     padding: 10px 25px; 
-    width: 45%;
+    width: 85%;
 }
 
-.img-contact {
-    width: 420px;
-    float: left;
-    margin: 0 20px 20px 0;
-}
-
-.enviar {
-    width: 15%;
-    padding: 15px 0;
-    font-size: 18px;
-    font-weight: bold;
-    color: #FFFFFF;
+.contact-form-form-btn-enviar {
     background-color: #2A7AE4;
     border: none;
     border-radius: 5px;
-    transition: 1s all;
+    color: #FFFFFF;
     cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 15px 0;
+    transition: 1s all;
+    width: 30%;
 }
 
-.enviar:hover {
+.contact-form-form-btn-enviar:hover {
     background-color: #2A7AE4;;
     transform: scale(1.2);  
 }
@@ -354,6 +409,108 @@ form label {
 
 footer {
     text-align: center;
-    *background-image: url("images/bg.jpg");
     padding: 20px;
+}
+
+
+
+/*CSS responsive mobile */
+
+@media screen and (max-width: 768px) {
+    .header-titulo {
+        color: #464646;
+        font-family: Raleway;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: bold;
+        *line-height: 19px;
+    }
+
+    .header-nav-link {
+        display: none;
+    }
+
+    .header-nav-link {
+        display: none;
+    }
+
+    .header-nav-link-contact {
+        display: initial;
+    }
+
+    .contenidoPrincipal .container {
+        flex-direction: column;
+        align-items: initial;
+    }
+
+    .contenidoPrincipal-image {
+        width: 98px;
+    }
+
+    .contenidoPrincipal-presentacion-titulo {
+        font-size: 22px;
+        line-height: 26px;
+    }
+
+    .contenidoPrincipal-presentacion-descripcion,
+    .contenidoPrincipal-presentacion-redes-link a {
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    .contenidoPrincipal-presentacion-redes-link a {
+        font-weight: 600;
+    }
+
+    /*... */
+
+
+    .skills-skills-list,
+    .hobbies-hobbies-list {
+        width: 45%;
+    }
+
+    .training-training-list {
+        width: initial;
+    }
+
+
+
+
+    .subtitulo {
+        margin-top: 40px;
+    }
+
+    .training-training {
+        flex-direction: column;
+    }
+
+    .projects-project {
+        flex-direction: column;
+        align-items: initial;
+    }
+
+    .projects-project-img {
+        margin-top: 20px;
+        width: 100%;
+    }
+
+    
+
+    .contact-img {
+        display: none;
+    }
+
+    .contact-form-form-input-padron {
+        width: 75%;
+    }
+
+    .contact-form-form-btn-enviar {
+        width: 60%;
+    }
+}
+
+
+@media screen and (max-width: 360px) {
+
 }
