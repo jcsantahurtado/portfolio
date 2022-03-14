@@ -7,7 +7,6 @@ body {
 /*CSS header */
 
 .header {
-	*background-color: #FFF;
 	padding: 20px 0;
 }
 
@@ -42,7 +41,6 @@ body {
 	display: block;
     margin: 10px;  /* */
 	margin-bottom: 10px;
-	*padding: 10px;
     padding-bottom: 5px;
 	text-decoration: none;
 	transition: .5s;
@@ -74,7 +72,7 @@ body {
 
 .contenidoPrincipal-image {
     margin: 0 20px 20px 0;
-    width: 298px;
+    width: 19rem;
 }
 
 .contenidoPrincipal-presentacion-titulo {
@@ -117,7 +115,9 @@ body {
 
 /*CSS main > aboutMe */
 
-.aboutMe {
+.aboutMe,
+.training,
+.contact {
     background-color: #EAF2FD;
 }
 
@@ -134,6 +134,7 @@ body {
     font-style: normal;
     font-weight: bold;
     line-height: 38px;
+    margin-bottom: 1.2rem;
 }
 
 .aboutMe-descripcion {
@@ -143,7 +144,13 @@ body {
     font-style: normal;
     font-weight: normal;
     line-height: 19px;
-    padding: 10px 0 20px 0;
+    padding-top: 10px;
+}
+
+.aboutMe-firma {
+    font-family: Pacifico, cursive;
+    font-size: 1rem;
+    margin: 1.5rem 1rem;
 }
 
 
@@ -168,27 +175,23 @@ body {
 .skills-skills {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .skills-skills-list {
     align-items: initial;
-    *width: 33%;
     padding: 20px 0 15px 0;
     text-align: left;
 }
 
 .skills-skills-list {
     display: inline-block;
-    *text-align: center;
     width: 17%;
-    *height: 170px;
     vertical-align: top;
     margin: 0 1.485%;
     padding: 10px 20px;
     padding-top: 80px;
     box-sizing: border-box;
-    *border: 2px solid #000000;
     background-color: #FFFFFF;
     border-radius: 10px;
     margin-bottom: 20px;
@@ -223,22 +226,18 @@ body {
 
 .hobbies-hobbies-list {
     align-items: initial;
-    *width: 33%;
     padding: 20px 0 15px 0;
     text-align: left;
 }
 
 .hobbies-hobbies-list {
     display: inline-block;
-    *text-align: center;
     width: 17%;
-    *height: 170px;
     vertical-align: top;
     margin: 0 1.485%;
     padding: 10px 20px;
     padding-top: 80px;
     box-sizing: border-box;
-    *border: 2px solid #000000;
     background-color: #FFFFFF;
     border-radius: 10px;
     margin-bottom: 20px;
@@ -263,6 +262,10 @@ body {
 
 /*CSS main > training */
 
+.training {
+    background-color: #EAF2FD;
+}
+
 .training .container {
     flex-direction: column;
 }
@@ -286,17 +289,18 @@ body {
 }
 
 .training-training-list-titulo,
-.training-training-list-description {
+.text-description {
     text-align: left;
 }
 
 .training-training-list-titulo {
+    color: #464646;
     font-family: Raleway;
     font-style: normal;
     font-weight: bold;
     font-size: 16px;
     line-height: 19px;
-    height: 40px;
+    height: 17.5%;
 }
 
 .training-training-list-img {
@@ -364,26 +368,42 @@ body {
     margin-top: 20px;
 }
 
+.contact-form {
+    margin-left: 1rem;
+}
+
 .contact-form-form {
     display: flex;
     flex-direction: column;
-    padding: 25px 0 0 10px;
+    padding: 25px 10px 0 10px;
 }
 
 .subtitulo {
     margin-top: auto;
 }
 
+.contact-text {
+    color: #464646;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+}
+
 .contact-form-form-label {
-    font-size: 20px;
-    margin: 0 0 10px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    color: #413B3B;
+    margin-bottom: 5px;
 }
 
 .contact-form-form-input-padron {
     display: block;
     margin: 0 0 25px;
-    padding: 10px 25px; 
-    width: 85%;
+    padding: 15px 25px; 
 }
 
 .contact-form-form-btn-enviar {
@@ -392,24 +412,31 @@ body {
     border-radius: 5px;
     color: #FFFFFF;
     cursor: pointer;
-    font-size: 18px;
-    font-weight: bold;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
     padding: 15px 0;
     transition: 1s all;
-    width: 30%;
+    width: 144px;
 }
 
 .contact-form-form-btn-enviar:hover {
     background-color: #2A7AE4;;
-    transform: scale(1.2);  
+    transform: scale(1.1);  
 }
 
 
 /*CSS footer*/
 
 footer {
-    text-align: center;
+    color: #464646;
+    font-family: 'Raleway';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 19px;
     padding: 20px;
+    text-align: center;
 }
 
 
@@ -423,7 +450,6 @@ footer {
         font-size: 16px;
         font-style: normal;
         font-weight: bold;
-        *line-height: 19px;
     }
 
     .header-nav-link {
@@ -439,8 +465,8 @@ footer {
     }
 
     .contenidoPrincipal .container {
-        flex-direction: column;
         align-items: initial;
+        flex-direction: column;
     }
 
     .contenidoPrincipal-image {
@@ -456,6 +482,7 @@ footer {
     .contenidoPrincipal-presentacion-redes-link a {
         font-size: 14px;
         line-height: 16px;
+        padding-bottom: 15px;
     }
 
     .contenidoPrincipal-presentacion-redes-link a {
@@ -464,14 +491,23 @@ footer {
 
     /*... */
 
+    .aboutMe-titulo {
+        font-size: 22px;
+    }
+
+    .aboutMe-descripcion {
+        font-size: 14px;
+    }
+
 
     .skills-skills-list,
     .hobbies-hobbies-list {
-        width: 45%;
+        width: 30%;
     }
 
-    .training-training-list {
-        width: initial;
+
+    .training-training-list-img {
+        width: 100px;
     }
 
 
@@ -479,11 +515,25 @@ footer {
 
     .subtitulo {
         margin-top: 40px;
+        font-size: 22px;
+        text-align: center;
     }
 
-    .training-training {
-        flex-direction: column;
+    
+    .training-training-list-titulo {
+        height: 25%;
     }
+
+    .text-descripcion,
+    .text-description {
+        color: #464646;
+        font-family: 'Raleway';
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 16px;
+    }
+
 
     .projects-project {
         flex-direction: column;
@@ -495,22 +545,30 @@ footer {
         width: 100%;
     }
 
-    
+    .projects-projects-list-titulo {
+        font-size: 16px;
+        margin: auto;
+    }
 
+    
     .contact-img {
         display: none;
     }
 
-    .contact-form-form-input-padron {
-        width: 75%;
-    }
-
-    .contact-form-form-btn-enviar {
-        width: 60%;
-    }
 }
 
 
 @media screen and (max-width: 360px) {
+    .skills-skills-list,
+    .hobbies-hobbies-list {
+        width: 45%;
+    }
 
+    .training-training {
+        flex-direction: column;
+    }
+
+    .training-training-list {
+        width: initial;
+    }
 }
