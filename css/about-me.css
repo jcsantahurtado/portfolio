@@ -1,0 +1,28 @@
+.aboutMe {
+    background-color: #EAF2FD;
+}
+
+.aboutMe-titulo {
+    color: #464646;
+    font-family: "Raleway";
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 26px;
+    padding-bottom: 10px;
+}
+
+.aboutMe-descripcion {
+    color: #464646;
+    font-family: "Raleway";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+    padding-bottom: 7.5px;
+}
+
+.aboutMe-firma {
+    font-family: "Pacifico", cursive;
+    padding: 20px 0 15px 10px;
+}

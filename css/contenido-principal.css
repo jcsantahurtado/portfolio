@@ -1,0 +1,38 @@
+.contenidoPrincipal-image {
+    width: 6.2rem;
+}
+
+.contenidoPrincipal-presentacion-titulo {
+    color: #464646;
+    font-family: "Raleway";
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 26px;
+    padding-bottom: 10px;
+}
+
+.contenidoPrincipal-presentacion-descripcion {
+    color: #464646;
+    font-family: "Raleway";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+    padding-bottom: 15px;
+}
+
+.contenidoPrincipal-presentacion-redes {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contenidoPrincipal-presentacion-redes-link a {
+    color: #464646;
+    font-family: "Raleway";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 16px;
+    text-decoration: none;
+}

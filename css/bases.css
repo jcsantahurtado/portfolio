@@ -1,0 +1,250 @@
+body {
+    background-color: #F5F5F5;
+    font-family: 'Raleway', sans-serif;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 1rem 0;
+    width: 88%;
+}
+
+.subtitulo {
+    color: #464646;
+    font-family: "Raleway";
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 26px;
+    text-align: center;
+}
+
+.figure {
+    text-align: center;
+    background-color: #FFFFFF;
+}
+
+
+.text-description {
+    color: #464646;
+    font-family: 'Raleway';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px;
+}
+
+.repository-btn {
+    color: #2A7AE4;
+    border: 1px solid #2A7AE4;
+    box-sizing: border-box;
+    display: inline-block;
+    margin-top: 10px;
+    padding: 12px 25px;
+    text-decoration: none;
+}
+
+.see-demo-btn {
+    background-color: #2A7AE4;
+    color: #FFFFFF;
+    padding: 12px 15px;
+    text-decoration: none;
+}
+
+.btn-enviar {
+    background-color: #2A7AE4;
+    border: none;
+    color: #FFFFFF;
+    cursor: pointer;
+    margin-top: 1rem;
+    padding: 12px 15px;
+    text-decoration: none;
+    transition: 1s all;
+    width: 144px;
+}
+
+.btn-enviar1 {
+    background-color: #2A7AE4;
+    border: none;
+    border-radius: 5px;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    margin-top: 10px;
+    padding: 15px 0;
+    transition: 1s all;
+    width: 144px;
+}
+
+.btn-enviar:hover {
+    background-color: #2A7AE4;;
+    transform: scale(1.1);  
+}
+
+
+/*CSS responsive  */
+
+@media screen and (min-width: 462px) {
+
+    .header-nav-link {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 19px;
+    }
+
+    .contenidoPrincipal-presentacion-redes-link a {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 19px;
+    }
+
+    .contenidoPrincipal .container {
+        align-items: center;
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .contenidoPrincipal-presentacion {
+        padding-right: 1rem;
+    }
+
+    .contenidoPrincipal-image {
+        width: 9.2rem;
+    }
+
+    .skills-skills-list {
+        width: 29.3%;
+    }
+
+    .hobbies-hobbies-list {
+        width: 29.3%;
+    }
+
+    .training-training {
+        text-align: center;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .training-training-list {
+        padding: 4% 2%;
+        width: 29.3%;
+
+    }
+
+    .training-training-list-img {
+        width: 100px;
+    }
+
+}
+
+@media screen and (min-width: 768px) {
+
+    .header .container {
+        width: 78%;
+    }
+    
+    .header-nav-link {
+        display: initial;
+        margin-left: 15px;
+    }
+
+    .contenidoPrincipal-image {
+        width: 18.2rem;
+    }
+
+    .contenidoPrincipal-presentacion-titulo {
+        font-size: 52px;
+        line-height: 61px;
+        *font-size: 3.25rem;
+        *line-height: 3.8125rem; 
+    }
+
+    .contenidoPrincipal-presentacion-descripcion {
+        font-size: 22px;
+        line-height: 26px;
+    }
+
+    .contenidoPrincipal-presentacion-redes {
+        justify-content: initial;
+    }
+
+    .contenidoPrincipal-presentacion-redes-link {
+        margin-right: 20px;
+    }
+    
+    .contenidoPrincipal-presentacion-redes-link a {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 19px;
+    }
+
+    .aboutMe-titulo {
+        font-size: 32px;
+        line-height: 38px;
+    }
+
+    .aboutMe-descripcion {
+        font-size: 16px;
+        line-height: 19px;
+    }
+
+    .subtitulo {
+        font-size: 32px;
+        line-height: 38px;   
+    }
+
+    .skills-skills {
+        *display: flex;
+        justify-content: space-between;
+    }
+
+    .skills-skills-list {
+        width: 16%;
+    }
+
+    .hobbies-hobbies {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .hobbies-hobbies-list {
+        margin: 1rem 0;
+        width: 16%;
+    }
+
+    .figure {
+        padding: 20px 0;
+    }
+
+    .projects-project {
+        display: flex;
+    }
+
+    .decoder {
+        align-items: center;
+    }
+
+    .decoder .projects-project-img {
+        width: 75%;
+    }
+
+    .hangman {
+        align-items: center;
+        flex-direction: row-reverse;
+    }
+
+    .contact-img {
+        display: initial;
+    }
+
+    .contact .container {
+        display: flex;
+    }
+
+    .contact-form {
+        padding: 15px;
+    }
+}

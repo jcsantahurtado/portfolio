@@ -1,0 +1,33 @@
+.training {
+    background-color: #EAF2FD;
+}
+
+.training-training {
+    *background-color: #FFFFFF;
+    text-align: center;
+
+}
+
+.training-training-list {
+    padding-top: 1rem;
+}
+
+.training-training-list-img {
+    width: 150px;
+}
+
+.training-training-list-titulo {
+    background-color: #EAF2FD;
+    color: #464646;
+    font-family: "Raleway";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 19px;
+    text-align: initial;
+}
+
+.training-training .text-description {
+    background-color: #EAF2FD;
+    text-align: initial;
+}
