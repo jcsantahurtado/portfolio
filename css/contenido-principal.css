@@ -19,8 +19,29 @@
     font-style: normal;
     font-weight: 400;
     line-height: 16px;
-    padding-bottom: 15px;
+    *padding-bottom: 15px;
 }
+
+
+.contenidoPrincipal__contacto {
+    color: #464646;
+    font-size: 16px;
+    line-height: 20px;
+    margin: .5rem 0;
+}
+
+.contenidoPrincipal__contacto-telefono {
+    color: #464646;
+    line-height: normal;
+    text-decoration: none;
+}
+
+.contenidoPrincipal__contacto-email {
+    color: #464646;
+    text-decoration: underline;
+    *display: block;
+}
+
 
 .contenidoPrincipal-presentacion-redes {
     display: flex;
