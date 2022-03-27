@@ -8,10 +8,11 @@
     <title>Juan Santa's Portfolio</title>
 
     <script src="https://kit.fontawesome.com/e20a5c8519.js" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Raleway:wght@400;600;700&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Raleway:wght@400;600;700&display=swap"
+        rel="stylesheet">
 
     <link rel="stylesheet" href="css/reset.css">
-    
+
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/contenido-principal.css">
     <link rel="stylesheet" href="css/about-me.css">
@@ -21,8 +22,10 @@
     <link rel="stylesheet" href="css/projects.css">
     <link rel="stylesheet" href="css/contact.css">
     <link rel="stylesheet" href="css/footer.css">
-    
+
     <link rel="stylesheet" href="css/bases.css">
+
+    <link rel="stylesheet" href="./css/responsive.css">
 
 </head>
 
@@ -39,7 +42,6 @@
                 <a class="header-nav-link" href="#training">Formación</a>
                 <a class="header-nav-link" href="#projects">Proyectos</a>
                 <a class="header-nav-link header-nav-link-contact" href="#contact">Contacto</a>
-                <!-- <a class="header-nav-link header-nav-link-curriculum" href="#contact" hidden>Curriculum</a> -->
             </nav>
         </div>
     </header>
@@ -49,13 +51,35 @@
             <div class="container">
                 <img class="contenidoPrincipal-image image" src="images/my-image.svg" alt="photo">
                 <div class="contenidoPrincipal-presentacion">
-                    <h2 class="contenidoPrincipal-presentacion-titulo">Hola, mi nombre es Juan Carlos y construyo paginas web</h2>
-                    <p class="contenidoPrincipal-presentacion-descripcion">Soy estudiante de Ingenieria de Sistemas de la Universidad de Antioquia y actualmente estoy participando en el proyecto Oracle ONE en Alura Latam</p>
+                    <h2 class="contenidoPrincipal-presentacion-titulo">Hola, mi nombre es Juan Carlos y construyo
+                        paginas web</h2>
+                    <p class="contenidoPrincipal-presentacion-descripcion">Soy estudiante de Ingenieria de Sistemas de
+                        la Universidad de Antioquia y actualmente estoy participando en el proyecto Oracle ONE en Alura
+                        Latam</p>
+
+
+                    <article class="contenidoPrincipal__contacto">
+                        <p>
+                            <a href="tel:+573205437568" class="contenidoPrincipal__contacto-telefono">+57 (320) 5437568</a>
+                            o
+                            <a href="mailto:jcsantahurtado@gmail.com"
+                                class="contenidoPrincipal__contacto-email">jcsantahurtado@gmail.com</a>
+                        </p>
+                    </article>
+                    
+
                     <ul class="contenidoPrincipal-presentacion-redes">
-                        <li class="contenidoPrincipal-presentacion-redes-link"><a href="https://github.com/jcsantahurtado">Github <i class="fa-solid fa-arrow-up-right-from-square"></i></a></li>
-                        <li class="contenidoPrincipal-presentacion-redes-link"><a href="https://www.linkedin.com/in/jcsantahurtado">Linkedin <i class="fa-solid fa-arrow-up-right-from-square"></i></a></li>
-                        <li class="contenidoPrincipal-presentacion-redes-link"><a href="https://twitter.com/jcsantahurtado">Twitter <i class="fa-solid fa-arrow-up-right-from-square"></i></a></li>
-                        <li class="contenidoPrincipal-presentacion-redes-link"><a href="#">Curriculum <i class="fa-solid fa-arrow-up-right-from-square"></i></a></li>
+                        <li class="contenidoPrincipal-presentacion-redes-link"><a
+                                href="https://github.com/jcsantahurtado" target="_blank">Github <i
+                                    class="fa-solid fa-arrow-up-right-from-square"></i></a></li>
+                        <li class="contenidoPrincipal-presentacion-redes-link"><a
+                                href="https://www.linkedin.com/in/jcsantahurtado" target="_blank">Linkedin <i
+                                    class="fa-solid fa-arrow-up-right-from-square"></i></a></li>
+                        <li class="contenidoPrincipal-presentacion-redes-link"><a
+                                href="https://twitter.com/jcsantahurtado" target="_blank">Twitter <i
+                                    class="fa-solid fa-arrow-up-right-from-square"></i></a></li>
+                        <li class="contenidoPrincipal-presentacion-redes-link"><a href="./pdf/curriculum.pdf" target="_blank">Curriculum
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i></a></li>
                     </ul>
                 </div>
             </div>
@@ -64,8 +88,14 @@
         <section class="aboutMe" id="aboutMe">
             <div class="container">
                 <h3 class="aboutMe-titulo">Sobre mí</h3>
-                <p class="aboutMe-descripcion">Soy formado como Técnico en Programación de Software en el SENA Colombia, tengo 22 años de edad, soy Colombiano y actualmente estoy participando del proyecto Oracle ONE en Alura Latam como principiante en programación con miras a convertirme en Desarrollador Front-End, espero destacar y empezar a trabajar en lo que me apasiona.</p>
-                <p class="aboutMe-descripcion">Tengo conocimientos en desarrollo e implementación de aplicaciones de software para entornos Windows o entornos Web, manejo de diferentes plataformas y lenguajes de programación; Con habilidades en atención al detalle, adaptabilidad, fácil aprendizaje y seguimiento de instrucciones.</p>
+                <p class="aboutMe-descripcion">Soy formado como Técnico en Programación de Software en el SENA Colombia,
+                    tengo 22 años de edad, soy Colombiano y actualmente estoy participando del proyecto Oracle ONE en
+                    Alura Latam como principiante en programación con miras a convertirme en Desarrollador Front-End,
+                    espero destacar y empezar a trabajar en lo que me apasiona.</p>
+                <p class="aboutMe-descripcion">Tengo conocimientos en desarrollo e implementación de aplicaciones de
+                    software para entornos Windows o entornos Web, manejo de diferentes plataformas y lenguajes de
+                    programación; Con habilidades en atención al detalle, adaptabilidad, fácil aprendizaje y seguimiento
+                    de instrucciones.</p>
                 <p class="aboutMe-firma">Juan Santa</p>
             </div>
         </section>
@@ -144,27 +174,22 @@
                 <ul class="training-training">
                     <li class="training-training-list">
                         <div class="figure">
-                            <img src="images/training/sena.svg" 
-                            alt="SENA" 
-                            class="training-training-list-img">
+                            <img src="images/training/sena.svg" alt="SENA" class="training-training-list-img">
                         </div>
                         <h4 class="training-training-list-titulo">Técnico en Programación de Software</h4>
                         <p class="text-description">2018 - SENA</p>
                     </li>
                     <li class="training-training-list">
                         <div class="figure">
-                            <img src="images/training/udea.svg" 
-                            alt="UdeA" 
-                            class="training-training-list-img">
+                            <img src="images/training/udea.svg" alt="UdeA" class="training-training-list-img">
                         </div>
                         <h4 class="training-training-list-titulo">Ingeniería de Sistemas</h4>
                         <p class="text-description">En curso - UdeA</p>
                     </li>
                     <li class="training-training-list">
                         <div class="figure">
-                            <img src="images/training/one.svg"
-                            alt="ONE-Oracle Next Education" 
-                            class="training-training-list-img">
+                            <img src="images/training/one.svg" alt="ONE-Oracle Next Education"
+                                class="training-training-list-img">
                         </div>
                         <h4 class="training-training-list-titulo">Desarrollador Front-End</h4>
                         <p class="text-description">En curso - alura LATAM</p>
@@ -182,8 +207,10 @@
                     <div>
                         <h4 class="projects-projects-list-titulo">Text Decoder</h4>
                         <p class="text-description">Challenge Oracle</p>
-                        <a target="_blank" class="boton repository-btn" href="https://github.com/jcsantahurtado/challenge_week_1_and_2">Repositorio</a>
-                        <a target="_blank" class="boton see-demo-btn" href="https://jcsantahurtado.github.io/challenge_week_1_and_2/">Ver demo</a>
+                        <a target="_blank" class="boton repository-btn"
+                            href="https://github.com/jcsantahurtado/challenge_week_1_and_2">Repositorio</a>
+                        <a target="_blank" class="boton see-demo-btn"
+                            href="https://jcsantahurtado.github.io/challenge_week_1_and_2/">Ver demo</a>
                     </div>
                 </div>
                 <div class="projects-project hangman">
@@ -191,8 +218,10 @@
                     <div>
                         <h4 class="projects-projects-list-titulo">Hangman Game - creado con HTML y Javascript</h4>
                         <p class="text-description">Challenge Oracle</p>
-                        <a target="_blank" class="boton repository-btn" href="https://github.com/ jcsantahurtado/challenge-oracle-hangman">Repositorio</a>
-                        <a target="_blank" class="boton see-demo-btn" href="https://jcsantahurtado.github.io/challenge-oracle-hangman/">Ver demo</a>
+                        <a target="_blank" class="boton repository-btn"
+                            href="https://github.com/ jcsantahurtado/challenge-oracle-hangman">Repositorio</a>
+                        <a target="_blank" class="boton see-demo-btn"
+                            href="https://jcsantahurtado.github.io/challenge-oracle-hangman/">Ver demo</a>
                     </div>
                 </div>
             </div>
@@ -206,15 +235,27 @@
                     <p class="contact-text">¿Quieres contactarme?</p>
                     <p class="contact-text">Complete el siguiente formulario y me pondré en contacto con usted lo antes posible.</p>
 
-                    <form class="contact-form-form" action="">
-                        <label class="contact-form-form-label" for="name">Nombre</label>
-                        <input type="text" class="contact-form-form-input-padron" id="name" placeholder="Nombre" maxlength="50" required>
-                        <label class="contact-form-form-label" for="email">Correo electrónico</label>
-                        <input type="email" class="contact-form-form-input-padron" id="email" autocomplete="on" placeholder="ejemplo@dominio.com" required>
-                        <label class="contact-form-form-label" for="subject ">Asunto</label>
-                        <input type="text" class="contact-form-form-input-padron" id="subject" placeholder="Ejemplo: 'algo que quieras decirme...'" maxlength="50" required>
-                        <label class="contact-form-form-label" for="message">Mensaje</label>
-                        <textarea name="" id="message" cols="30" rows="3" class="contact-form-form-input-padron" placeholder="Hola, Juan! ..." maxlength="300" required></textarea>
+                    <form class="form" action="">
+                        <div class="inputField">
+                            <input name="name" id="name" class="input" type="text" placeholder="Nombre" required data-tipo="nombre">
+                            <label class="floating-label" for="name">Nombre</label>
+                            <span class="input-message-error">Este campo no es valido</span>
+                        </div>
+                        <div class="inputField">
+                            <input name="email" id="email" class="input" type="email" placeholder="Email" required data-tipo="email">
+                            <label class="floating-label" for="email">E-mail</label>
+                            <span class="input-message-error">Este campo no es valido</span>
+                        </div>
+                        <div class="inputField">
+                            <input name="subject" id="subject" class="input" type="text" placeholder="Asunto" pattern="[\s\S]{4,50}" required data-tipo="asunto">
+                            <label class="floating-label" for="subject">Asunto</label>
+                            <span class="input-message-error">Este campo no es valido</span>
+                        </div>
+                        <div class="inputField">
+                            <textarea name="message" id="message" cols="30" rows="3" class="textarea input" placeholder="Mensaje" pattern="[\s\S]{10,300}" minlength="10" maxlength="300" required data-tipo="mensaje"></textarea>
+                            <label class="floating-label floating-label--message" for="message">Mensaje</label>
+                            <span class="input-message-error message">Este campo no es valido</span>
+                        </div>
                         <input type="submit" value="Enviar mensaje" class="boton btn-enviar">
                     </form>
                 </div>
@@ -225,6 +266,8 @@
             <p class="copyrigth">&copy; Desarrollado por Juan Santa - 2022</p>
         </footer>
     </main>
+
+    <script src="./js/script.js" type="module"></script>
 </body>
 
 </html>
