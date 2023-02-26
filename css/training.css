@@ -1,33 +1,53 @@
-.training {
-    background-color: #EAF2FD;
+/* Formación académica */
+
+.formacion {
+  padding: 40px 40px 80px 40px;
 }
 
-.training-training {
-    *background-color: #FFFFFF;
-    text-align: center;
-
+.formacion .carousel {
+  max-width: 800px;
 }
 
-.training-training-list {
-    padding-top: 1rem;
+.carousel-item {
+  height: 500px;
 }
 
-.training-training-list-img {
-    width: 150px;
+.carousel-item .container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-.training-training-list-titulo {
-    background-color: #EAF2FD;
-    color: #464646;
-    font-family: "Raleway";
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 19px;
-    text-align: initial;
+.formacion-imagen {
+  height: 150px;
+  width: 150px;
+  margin: 10px 10px 20px 10px;
 }
 
-.training-training .text-description {
-    background-color: #EAF2FD;
-    text-align: initial;
+.formacion-texto {
+  max-width: 70%;
+  font-size: 20px;
+  text-align: center;
+  font-family: 'Share Tech Mono', monospace;
+}
+
+.formacion-info {
+  font-weight: bold;
+  text-align: center;
+}
+
+.formacion-info p {
+  margin-bottom: 0;
+}
+
+.formacion-info .institucion {
+  font-size: 1.2rem;
+}
+
+.formacion-info .grado {
+  font-size: .9rem;
+  color: #656060;
 }

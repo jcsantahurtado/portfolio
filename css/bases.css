@@ -1,128 +1,51 @@
-:root {
-    --font-family-body: "Montserrat", sans-serif;
-    --font-family-logo: "Pacifico", cursive;
-  
-    --font-weigth-input: 300;
-  
-    --font-size-logo: 28px;
-    --font-size-card-title: 28px;
-    --font-size-input-label: 20px;
-    --font-size-button: 22px;
-    --font-size-form-fieldset: 22px;
-    --font-size-table-header: 22px;
-    --font-size-modal-title: 28px;
-    --font-size-modal-button: 28px;
-  
-    --primary-color: #0071ea;
-    --secondary-color: #d6eaff;
-    --contrast-dark-color: #4d4d4d;
-  
-    --contrast-light-color: #fff;
-    --warning-color: #df2525;
-    --success-color: #047900;
-    --transparency-color: #4d4d4d33;
-  
-    --shadow: 0 5px 10px #55a6ff38;
-  }
+/* Estilos generales */
 
-
-
-  
-body {
-    background-color: #F5F5F5;
-    font-family: 'Raleway', sans-serif;
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-.container {
-    margin: 0 auto;
-    padding: 1rem 0;
-    width: 88%;
+h1 {
+  font-size: 2.5rem;
+  font-family: 'Rubik Dirt', cursive;
 }
 
-.subtitulo {
-    color: #464646;
-    font-family: "Raleway";
-    font-size: 22px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 26px;
-    text-align: center;
+.seccion-oscura {
+  color: white;
+  background-color: #1b1b32;
 }
 
-.figure {
-    text-align: center;
-    background-color: #FFFFFF;
+.seccion-clara {
+  color: black;
+  background-color: white;
 }
 
-
-.text-description {
-    color: #464646;
-    font-family: 'Raleway';
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 16px;
+.seccion-titulo {
+  font-size: 2rem;
+  padding: 15px 0;
+  font-family: 'Rubik Dirt', cursive;
 }
 
-.repository-btn {
-    color: #2A7AE4;
-    border: 1px solid #2A7AE4;
-    box-sizing: border-box;
-    display: inline-block;
-    margin-top: 10px;
-    padding: 12px 25px;
-    text-decoration: none;
+.seccion-descripcion {
+  font-size: 1.2rem;
+  color: #584e4e;
 }
 
-.see-demo-btn {
-    background-color: #2A7AE4;
-    color: #FFFFFF;
-    padding: 12px 15px;
-    text-decoration: none;
+.seccion-texto {
+  font-size: 1.2rem;
 }
 
-.btn-enviar {
-    background-color: #2A7AE4;
-    border: none;
-    color: #FFFFFF;
-    cursor: pointer;
-    margin-top: 1rem;
-    padding: 12px 15px;
-    text-decoration: none;
-    transition: 1s all;
-    width: 144px;
+.btn-info {
+  font-size: 1.1rem;
+  margin: 20px;
 }
 
-.btn-enviar1 {
-    background-color: #2A7AE4;
-    border: none;
-    border-radius: 5px;
-    color: #FFFFFF;
-    cursor: pointer;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 19px;
-    margin-top: 10px;
-    padding: 15px 0;
-    transition: 1s all;
-    width: 144px;
+.texto-negro {
+  color: black;
 }
 
-.btn-enviar:hover {
-    background-color: #2A7AE4;;
-    transform: scale(1.1);  
-}
-
-
-/*CSS responsive  */
-
-@media screen and (min-width: 462px) {
-
-    
-
-}
-
-@media screen and (min-width: 768px) {
-
-    
+.texto-blanco {
+  color: white;
 }

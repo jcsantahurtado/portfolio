@@ -2,272 +2,362 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Juan Santa's Portfolio</title>
+  <!-- Metadatos -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="author" content="Juan Santa">
+  <meta name="description" content="Portfolio de Juan Santa">
+  <meta name="keywords" content="Software, Programador, Java, Automatizador, QA, Tester">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Titulo -->
+  <title>Juan Santa's Portfolio</title>
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="images/icons8-programing-64.png">
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <!-- Iconos de Bootstrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+  <!-- CSS -->
+  <link href="css/navigation-bar.css" rel="stylesheet">
+  <link href="css/bases.css" rel="stylesheet">
+  <link href="css/hero.css" rel="stylesheet">
+  <link href="css/about-me.css" rel="stylesheet">
+  <link href="css/skills.css" rel="stylesheet">
+  <link href="css/projects.css" rel="stylesheet">
+  <link href="css/hobbies.css" rel="stylesheet">
+  <link href="css/training.css" rel="stylesheet">
+  <link href="css/contact.css" rel="stylesheet">
+  <link href="css/footer.css" rel="stylesheet">
+  <link href="css/responsive.css" rel="stylesheet">
 
-    <script src="https://kit.fontawesome.com/e20a5c8519.js" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Raleway:wght@400;600;700&display=swap"
-        rel="stylesheet">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&family=Rubik+Dirt&family=Share+Tech+Mono&display=swap"
+    rel="stylesheet">
 
-    <link rel="stylesheet" href="css/reset.css">
-
-    <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/contenido-principal.css">
-    <link rel="stylesheet" href="css/about-me.css">
-    <link rel="stylesheet" href="css/skills.css">
-    <link rel="stylesheet" href="css/hobbies.css">
-    <link rel="stylesheet" href="css/training.css">
-    <link rel="stylesheet" href="css/projects.css">
-    <link rel="stylesheet" href="css/contact.css">
-    <link rel="stylesheet" href="css/footer.css">
-
-    <link rel="stylesheet" href="css/bases.css">
-
-    <link rel="stylesheet" href="./css/responsive.css">
+  <script src="https://kit.fontawesome.com/e20a5c8519.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Raleway:wght@400;600;700&display=swap"
+    rel="stylesheet">
 
 </head>
 
 <body>
-    <header class="header">
-        <div class="container">
-            <h1 class="header-titulo">
-                <i class="fa-brands fa-dev"> Juan Carlos</i>
-            </h1>
-            <nav class="header-nav">
-                <a class="header-nav-link" href="#aboutMe">Sobre mí</a>
-                <a class="header-nav-link" href="#skills">Skills</a>
-                <a class="header-nav-link" href="#hobbies">Hobbies</a>
-                <a class="header-nav-link" href="#training">Formación</a>
-                <a class="header-nav-link" href="#projects">Proyectos</a>
-                <a class="header-nav-link header-nav-link-contact" href="#contact">Contacto</a>
-            </nav>
+  <!-- Barra de navegacion -->
+  <nav class="navbar navbar-expand-md navbar-light">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler"
+        aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbar-toggler">
+        <a class="navbar-brand" href="#">
+          <img src="images/informatics.png" width="50" alt="Logo de la página web">
+        </a>
+        <ul class="navbar-nav d-flex justify-content-center align-items-center">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#sobre-mi">Sobre mí</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#proyectos">Proyectos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#formacion">Formación</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contacto">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Seccion Hero -->
+  <section class="hero align-items-stretch">
+    <div class="hero-principal d-flex flex-column justify-content-center align-items-center">
+      <img class="hero-imagen-desarrollador rounded-circle" src="images/desarrollador.png" alt="Foto de Juan Carlos">
+      <h1>Hola, soy Juan Carlos</h1>
+      <h2>Desarrollo aplicativos de software para entornos de Escritorio o entornos Web y me apasiona el mundo de la
+        Automatización QA.</h2>
+    </div>
+    <div class="hero-inferior">
+      <img class="hero-inferior-imagen img-fluid" src="images/hero-inferior.png"
+        alt="Monitor, laptop y logos de Java, React, TDD y Cucumber.">
+    </div>
+  </section>
+
+  <!-- Sobre mi -->
+  <section id="sobre-mi" class="sobre-mi seccion-oscura">
+    <div class="contenedor">
+      <h2 class="seccion-titulo">Conoce a Juan Carlos</h2>
+      <p class="seccion-texto">Estudiante de ingeniería de sistemas y técnico en programación de software, con
+        conocimientos en desarrollo e implementación de aplicativos de software para entornos de Escritorio o entornos
+        Web, busco oportunidad adquirir experiencia en manejo de diferentes plataformas y lenguajes de
+        programación; con competencias en atención al detalle, adaptabilidad, fácil aprendizaje y seguimiento de
+        instrucciones.</p>
+    </div>
+  </section>
+
+  <!-- Experiencia -->
+  <section class="experiencia seccion-clara">
+    <div class="container text-center">
+      <div class="row">
+        <!-- Automatización QA -->
+        <div class="columna col-12 col-md-4">
+          <i class="bi bi-laptop"></i>
+          <p class="experiencia-titulo">Automatización QA</p>
+          <p>Automatizo de pruebas utilizando el lenguaje de programación Java con Gradle y Patrón Screenplay.</p>
+          <div class="badges-contenedor">
+            <span class="badge text-bg-primary">Java</span>
+            <span class="badge text-bg-primary">Jira</span>
+            <span class="badge text-bg-primary">Screenplay</span>
+            <span class="badge text-bg-primary">GIT</span>
+          </div>
         </div>
-    </header>
+        <!-- Desarrollo Java -->
+        <div class="columna col-12 col-md-4">
+          <i class="bi bi-laptop"></i>
+          <p class="experiencia-titulo">Back-end con Java</p>
+          <p>Desarrollo e implemento aplicativos de software para entornos de Escritorio o entornos Web.</p>
+          <div class="badges-contenedor">
+            <span class="badge text-bg-primary">Java</span>
+            <span class="badge text-bg-primary">SpringBoot</span>
+            <span class="badge text-bg-primary">MySQL</span>
+            <span class="badge text-bg-primary">JUnit</span>
+          </div>
+        </div>
+        <!-- Estudiante -->
+        <div class="columna col-12 col-md-4">
+          <i class="bi bi-laptop"></i>
+          <p class="experiencia-titulo">Estudiante</p>
+          <p>Estudio ingeniería de sistemas, un modelo curricular orientado a la solución de problemas y al logro de
+            competencias.</p>
+          <div class="badges-contenedor">
+            <span class="badge text-bg-primary">Ingeniería</span>
+            <span class="badge text-bg-primary">Informática</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <main>
-        <section class="contenidoPrincipal">
-            <div class="container">
-                <img class="contenidoPrincipal-image image" src="images/my-image-nueva.svg" alt="photo">
-                <div class="contenidoPrincipal-presentacion">
-                    <h2 class="contenidoPrincipal-presentacion-titulo">Hola, mi nombre es Juan Carlos y construyo
-                        paginas web</h2>
-                    <p class="contenidoPrincipal-presentacion-descripcion">Soy estudiante de Ingenieria de Sistemas de
-                        la Universidad de Antioquia y actualmente estoy participando en el proyecto Oracle ONE en Alura
-                        Latam</p>
-
-
-                    <article class="contenidoPrincipal__contacto">
-                        <p>
-                            <a href="tel:+573205437568" class="contenidoPrincipal__contacto-telefono">+57 (320) 5437568</a>
-                            o
-                            <a href="mailto:jcsantahurtado@gmail.com"
-                                class="contenidoPrincipal__contacto-email">jcsantahurtado@gmail.com</a>
-                        </p>
-                    </article>
-                    
-
-                    <ul class="contenidoPrincipal-presentacion-redes">
-                        <li class="contenidoPrincipal-presentacion-redes-link"><a
-                                href="https://github.com/jcsantahurtado" target="_blank">Github <i
-                                    class="fa-solid fa-arrow-up-right-from-square"></i></a></li>
-                        <li class="contenidoPrincipal-presentacion-redes-link"><a
-                                href="https://www.linkedin.com/in/jcsantahurtado" target="_blank">Linkedin <i
-                                    class="fa-solid fa-arrow-up-right-from-square"></i></a></li>
-                        <li class="contenidoPrincipal-presentacion-redes-link"><a
-                                href="https://twitter.com/jcsantahurtado" target="_blank">Twitter <i
-                                    class="fa-solid fa-arrow-up-right-from-square"></i></a></li>
-                        <li class="contenidoPrincipal-presentacion-redes-link"><a href="./pdf/curriculum.pdf" target="_blank">Curriculum
-                                <i class="fa-solid fa-arrow-up-right-from-square"></i></a></li>
-                    </ul>
-                </div>
+  <!-- Proyectos -->
+  <section id="proyectos" class="proyectos-recientes seccion-clara d-flex flex-column">
+    <h2 class="seccion-titulo texto-negro">Mis proyectos recientes</h2>
+    <h3 class="seccion-descripcion">Estos son algunos de proyectos que he creado recientemente...</h3>
+    <!-- Galeria de Proyectos -->
+    <div class="container text-center proyectos-contenedor">
+      <div class="row">
+        <!-- Proyecto 1 -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="proyecto">
+            <img src="images/projects/1.png" alt="Proyecto 1">
+            <div class="overlay">
+              <p>Automatización con Screenplay</p>
+              <div class="iconos-contenedor">
+                <a href="https://github.com/jcsantahurtado/screenplay-practice" target="_blank"
+                  rel="noopener noreferrer">
+                  <i class="bi bi-github"></i>
+                </a>
+                <a href="https://github.com/jcsantahurtado/screenplay-practice#readme" target="_blank"
+                  rel="noopener noreferrer">
+                  <i class="bi bi-laptop"></i>
+                </a>
+              </div>
             </div>
-        </section>
-
-        <section class="aboutMe" id="aboutMe">
-            <div class="container">
-                <h3 class="aboutMe-titulo">Sobre mí</h3>
-                <p class="aboutMe-descripcion">Soy formado como Técnico en Programación de Software en el SENA Colombia,
-                    tengo 22 años de edad, soy Colombiano y actualmente estoy participando del proyecto Oracle ONE en
-                    Alura Latam como principiante en programación con miras a convertirme en Desarrollador Front-End,
-                    espero destacar y empezar a trabajar en lo que me apasiona.</p>
-                <p class="aboutMe-descripcion">Tengo conocimientos en desarrollo e implementación de aplicaciones de
-                    software para entornos Windows o entornos Web, manejo de diferentes plataformas y lenguajes de
-                    programación; Con habilidades en atención al detalle, adaptabilidad, fácil aprendizaje y seguimiento
-                    de instrucciones.</p>
-                <p class="aboutMe-firma">Juan Santa</p>
+          </div>
+        </div>
+        <!-- Proyecto 2 -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="proyecto">
+            <img src="images/projects/2.png" alt="Proyecto 1">
+            <div class="overlay">
+              <p>Java Spring Boot (API)</p>
+              <div class="iconos-contenedor">
+                <a href="https://github.com/jcsantahurtado/disney-exploratory-system" target="_blank"
+                  rel="noopener noreferrer">
+                  <i class="bi bi-github"></i>
+                </a>
+                <a href="https://github.com/jcsantahurtado/disney-exploratory-system#readme" target="_blank"
+                  rel="noopener noreferrer">
+                  <i class="bi bi-laptop"></i>
+                </a>
+              </div>
             </div>
-        </section>
-
-        <section class="skills" id="skills">
-            <div class="container">
-                <h3 class="subtitulo">Skills</h3>
-                <nav>
-                    <ul class="skills-skills">
-                        <li class="skills-skills-list">
-                            <img class="skills-skills-list-img" src="images/skills/html.svg" alt="HTML 5">
-                            <h4 class="skills-skills-list-nombre">HTML 5</h4>
-                        </li>
-                        <li class="skills-skills-list">
-                            <img src="images/skills/javascript.svg" alt="Javascript">
-                            <h4 class="skills-skills-list-nombre">Javascript</h4>
-                        </li>
-                        <li class="skills-skills-list">
-                            <img src="images/skills/css.svg" alt="CSS">
-                            <h4 class="skills-skills-list-nombre">CSS</h4>
-                        </li>
-                        <li class="skills-skills-list">
-                            <img src="images/skills/python-v2.svg" alt="Python">
-                            <h4 class="skills-skills-list-nombre">Python</h4>
-                        </li>
-                        <li class="skills-skills-list">
-                            <img src="images/skills/java-v2.svg" alt="Java">
-                            <h4 class="skills-skills-list-nombre">Java</h4>
-                        </li>
-                    </ul>
-                </nav>
+          </div>
+        </div>
+        <!-- Proyecto 3 -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="proyecto">
+            <img src="images/projects/3.png" alt="Proyecto 3">
+            <div class="overlay">
+              <p>E-commerce</p>
+              <div class="iconos-contenedor">
+                <a href="https://github.com/jcsantahurtado/e-commerce" target="_blank" rel="noopener noreferrer">
+                  <i class="bi bi-github"></i>
+                </a>
+                <a href="https://jcsantahurtado.github.io/e-commerce/" target="_blank" rel="noopener noreferrer">
+                  <i class="bi bi-laptop"></i>
+                </a>
+              </div>
             </div>
-        </section>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a href="https://github.com/jcsantahurtado?tab=repositories" target="_blank" rel="noopener noreferrer">
+      <button type="button" class="btn btn-info">
+        Ver más proyectos
+        <i class="bi bi-arrow-right-circle-fill"></i>
+      </button>
+    </a>
+  </section>
 
-        <section class="hobbies" id="hobbies">
-            <div class="container">
-                <h3 class="subtitulo">Hobbies</h3>
-                <nav>
-                    <ul class="hobbies-hobbies">
-                        <li class="hobbies-hobbies-list">
-                            <img class="hobbies-hobbies-list-img" src="images/hobbies/trekking.png" alt="Senderismo">
-                            <h4 class="hobbies-hobbies-list-nombre">Senderismo</h4>
-                        </li>
-                        <li class="hobbies-hobbies-list">
-                            <img class="hobbies-hobbies-list-img" src="images/hobbies/mask.png" alt="Comedia en vivo">
-                            <h4 class="hobbies-hobbies-list-nombre">Comedia en vivo</h4>
-                        </li>
-                        <li class="hobbies-hobbies-list">
-                            <img class="hobbies-hobbies-list-img" src="images/hobbies/pawprint.png"
-                                alt="Cuidar mascotas">
-                            <h4 class="hobbies-hobbies-list-nombre">Cuidar mascotas</h4>
-                        </li>
-                        <li class="hobbies-hobbies-list">
-                            <img class="hobbies-hobbies-list-img" src="images/hobbies/bicycle.png"
-                                alt="Cuidar mascotas">
-                            <h4 class="hobbies-hobbies-list-nombre">Ciclismo</h4>
-                        </li>
-                        <li class="hobbies-hobbies-list">
-                            <img class="hobbies-hobbies-list-img" src="images/hobbies/extreme-skydiving.png"
-                                alt="Deportes extremos">
-                            <h4 class="hobbies-hobbies-list-nombre">Deportes extremos</h4>
-                        </li>
-                        <li class="hobbies-hobbies-list">
-                            <img class="hobbies-hobbies-list-img" src="images/hobbies/online-class.png"
-                                alt="Aprendizaje online">
-                            <h4 class="hobbies-hobbies-list-nombre">Aprendizaje online</h4>
-                        </li>
-                    </ul>
-                </nav>
+  <!-- Hobbies -->
+  <section class="hobbies justify-content-start">
+    <h2 class="seccion-titulo texto-negro">Hobbies</h2>
+    <div class="card">
+      <div class="card-header">
+        Más frecuentes
+      </div>
+      <ul class="list-group list-group-flush">
+
+        <li class="list-group-item">
+          <img class="me-1" src="images/hobbies/trekking.png" alt="Senderismo" width="36px">
+          Senderismo
+        </li>
+
+        <li class="list-group-item">
+          <img class="me-1" src="images/hobbies/mask.png" alt="Comedia en vivo" width="36px">
+          Comedia en vivo
+        </li>
+
+        <li class="list-group-item">
+          <img class="me-1" src="images/hobbies/extreme-skydiving.png" alt="Deportes extremos" width="36px">
+          Deportes extremos
+        </li>
+
+        <li class="list-group-item">
+          <img class="me-1" src="images/hobbies/online-class.png" alt="Aprendizaje online" width="36px">
+          Aprendizaje online
+        </li>
+
+      </ul>
+    </div>
+  </section>
+
+  <!-- Formación académica -->
+  <section id="formacion" class="formacion seccion-clara">
+    <h2 class="seccion-titulo">Formación académica</h2>
+    <h3 class="seccion-descripcion">Educación recibida en instituciones de enseñanza.</h3>
+
+    <!-- Carrusel -->
+    <div id="formacion-carrusel" class="carousel carousel-dark slide">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="container">
+            <img src="images/training/udea.svg" alt="Logo Universidad de Antioquia"
+              class="formacion-imagen rounded-circle">
+            <p class="formacion-texto">Una universidad pública, departamental, mixta, de investigación ubicada
+              principalmente en la ciudad de Medellín.</p>
+            <div class="formacion-info">
+              <p class="institucion">Universidad de Antioquia</p>
+              <p class="grado">Estudiante de Ingeniería de Sistemas</p>
             </div>
-        </section>
-
-        <section class="training" id="training">
-            <div class="container">
-                <h3 class="subtitulo">Formación académica</h3>
-                <ul class="training-training">
-                    <li class="training-training-list">
-                        <div class="figure">
-                            <img src="images/training/sena.svg" alt="SENA" class="training-training-list-img">
-                        </div>
-                        <h4 class="training-training-list-titulo">Técnico en Programación de Software</h4>
-                        <p class="text-description">2018 - SENA</p>
-                    </li>
-                    <li class="training-training-list">
-                        <div class="figure">
-                            <img src="images/training/udea.svg" alt="UdeA" class="training-training-list-img">
-                        </div>
-                        <h4 class="training-training-list-titulo">Ingeniería de Sistemas</h4>
-                        <p class="text-description">En curso - UdeA</p>
-                    </li>
-                    <li class="training-training-list">
-                        <div class="figure">
-                            <img src="images/training/one.svg" alt="ONE-Oracle Next Education"
-                                class="training-training-list-img">
-                        </div>
-                        <h4 class="training-training-list-titulo">Desarrollador Front-End</h4>
-                        <p class="text-description">En curso - alura LATAM</p>
-                    </li>
-                </ul>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="container">
+            <img src="images/training/sena.svg" alt="Logo SENA" class="formacion-imagen rounded-circle">
+            <p class="formacion-texto">Un establecimiento público del orden Nacional y con autonomía administrativa,
+              adscrito al Ministerio del Trabajo.</p>
+            <div class="formacion-info">
+              <p class="institucion">Servicio Nacional de Aprendizaje (SENA Regional Antioquia)</p>
+              <p class="grado">Técnico en Programación de Software</p>
             </div>
-        </section>
-
-        <section class="projects" id="projects">
-            <div class="container">
-                <h3 class="subtitulo">Experiencia profesional</h3>
-                <div class="projects-project decoder">
-                    <img class="projects-project-img" src="images/projects/decoder.svg" alt="Encriptador de Texto"
-                        class="decoder">
-                    <div>
-                        <h4 class="projects-projects-list-titulo">Text Decoder</h4>
-                        <p class="text-description">Challenge Oracle</p>
-                        <a target="_blank" class="boton repository-btn"
-                            href="https://github.com/jcsantahurtado/challenge_week_1_and_2">Repositorio</a>
-                        <a target="_blank" class="boton see-demo-btn"
-                            href="https://jcsantahurtado.github.io/challenge_week_1_and_2/">Ver demo</a>
-                    </div>
-                </div>
-                <div class="projects-project hangman">
-                    <img class="projects-project-img" src="images/projects/hangman.svg" alt="Encriptador de Texto">
-                    <div>
-                        <h4 class="projects-projects-list-titulo">Hangman Game - creado con HTML y Javascript</h4>
-                        <p class="text-description">Challenge Oracle</p>
-                        <a target="_blank" class="boton repository-btn"
-                            href="https://github.com/ jcsantahurtado/challenge-oracle-hangman">Repositorio</a>
-                        <a target="_blank" class="boton see-demo-btn"
-                            href="https://jcsantahurtado.github.io/challenge-oracle-hangman/">Ver demo</a>
-                    </div>
-                </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="container">
+            <img src="images/training/bootcamp.svg" alt="Logo Bootcamp Ruta N + Sophos"
+              class="formacion-imagen rounded-circle">
+            <p class="formacion-texto">Sophos en alianza con Ruta N formaron personas en habilidades más demandadas,
+              entre esas Automatización de Pruebas - QA.</p>
+            <div class="formacion-info">
+              <p class="institucion">Bootcamp Ruta N + Sophos</p>
+              <p class="grado">Automatizador QA</p>
             </div>
-        </section>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#formacion-carrusel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#formacion-carrusel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Siguiente</span>
+      </button>
+    </div>
 
-        <section class="contact" id="contact">
-            <div class="container">
-                <img class="contact-img" src="images/contact/contact.svg" alt="contact">
-                <div class="contact-form">
-                    <h3 class="subtitulo">Contacto</h3>
-                    <p class="contact-text">¿Quieres contactarme?</p>
-                    <p class="contact-text">Complete el siguiente formulario y me pondré en contacto con usted lo antes posible.</p>
+  </section>
 
-                    <form class="form" action="">
-                        <div class="inputField">
-                            <input name="name" id="name" class="input" type="text" placeholder="Nombre" required data-tipo="nombre">
-                            <label class="floating-label" for="name">Nombre</label>
-                            <span class="input-message-error">Este campo no es valido</span>
-                        </div>
-                        <div class="inputField">
-                            <input name="email" id="email" class="input" type="email" placeholder="Email" required data-tipo="email">
-                            <label class="floating-label" for="email">E-mail</label>
-                            <span class="input-message-error">Este campo no es valido</span>
-                        </div>
-                        <div class="inputField">
-                            <input name="subject" id="subject" class="input" type="text" placeholder="Asunto" pattern="[\s\S]{4,50}" required data-tipo="asunto">
-                            <label class="floating-label" for="subject">Asunto</label>
-                            <span class="input-message-error">Este campo no es valido</span>
-                        </div>
-                        <div class="inputField">
-                            <textarea name="message" id="message" cols="30" rows="3" class="textarea input" placeholder="Mensaje" pattern="[\s\S]{10,300}" minlength="10" maxlength="300" required data-tipo="mensaje"></textarea>
-                            <label class="floating-label floating-label--message" for="message">Mensaje</label>
-                            <span class="input-message-error message">Este campo no es valido</span>
-                        </div>
-                        <input type="submit" value="Enviar mensaje" class="boton btn-enviar">
-                    </form>
-                </div>
-            </div>
-        </section>
+  <!-- Contacto -->
+  <section id="contacto" class="contacto seccion-oscura">
+    <div class="container">
+      <div class="container text-center rectangulo d-flex justify-content-evenly">
+        <div class="row">
+          <div class="col-12 col-md-4 seccion-titulo">
+            ¡Hablemos!
+          </div>
+          <div class="col-12 col-md-4 descripcion">
+            Contáctame, soy un apasionado por la tecnología y deseo enfocar mis conocimientos e intereses a tus
+            necesidades.
+          </div>
+          <div class="col-12 col-md-4">
+            <a href="mailto:jcsantahurtado@gmail.com">
+              <button type="button">
+                Contacto
+                <i class="bi bi-envelope-check-fill"></i>
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-        <footer>
-            <p class="copyrigth">&copy; Desarrollado por Juan Santa - 2022</p>
-        </footer>
-    </main>
+  <!-- Pie de pagina (Footer) -->
+  <section class="seccion-oscura d-flex flex-column align-items-center justify-content-center">
+    <img class="footer-logo" src="images/informatics-white.png" alt="Logo del portafolio">
+    <p class="footer-texto text-center">Aprendo y creo todos los días.</p>
+    <div class="iconos-redes-sociales d-flex flex-wrap align-items-center justify-content-center">
+      <a href="https://twitter.com/jcsantahurtado" target="_blank" rel="noopener noreferrer">
+        <i class="bi bi-twitter"></i>
+      </a>
+      <a href="https://github.com/jcsantahurtado" target="_blank" rel="noopener noreferrer">
+        <i class="bi bi-github"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/jcsantahurtado/" target="_blank" rel="noopener noreferrer">
+        <i class="bi bi-linkedin"></i>
+      </a>
+      <a href="mailto:jcsantahurtado@gmail.com" target="_blank" rel="noopener noreferrer">
+        <i class="bi bi-envelope"></i>
+      </a>
+    </div>
+    <div class="derechos-de-autor">
+      Creado por Juan Carlos (2023) &#169;
+    </div>
+  </section>
 
-    <script src="./js/script.js" type="module"></script>
+
+  <!-- <script src="./js/script.js" type="module"></script> -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+
 </body>
 
 </html>

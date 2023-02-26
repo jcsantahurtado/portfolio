@@ -1,29 +1,44 @@
-.skills-skills {
-    display: flex;
-    flex-wrap: wrap;
-    *justify-content: space-between;
+/* Experiencia */
+
+.experiencia {
+  padding: 40px 40px 60px 40px;
 }
 
-.skills-skills-list {
-    background-color: #FFFFFF;
-    border-radius: 10px;
-    box-sizing: border-box;
-    display: inline-block;
-    *margin: 0 1rem;
-    margin: 1% 2%;
-    margin-bottom: 20px;
-    padding: 10px 20px;
-    padding-top: 80px;
-    text-align: left;
-    vertical-align: top;
-    width: 46%;
+.experiencia .columna {
+  padding: 20px;
+  border: 2px solid #8080804d;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  transition: all .2s ease-in;
 }
 
-.skills-skills-list-nombre {
-    color: #464646;
-    font-family: "Raleway";
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 19px;
+.experiencia .columna:hover {
+  color: white;
+  background-color: #1b1b32;
+}
+
+.experiencia i {
+  font-size: 2.5rem;
+  color: #7ade30;
+  background-color: #0a0a23;
+  padding: 8px 19px;
+  border-radius: 50%;
+}
+
+.experiencia-titulo {
+  font-size: 25px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.badges-contenedor {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.badge {
+  margin: 5px;
 }

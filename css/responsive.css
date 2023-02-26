@@ -1,178 +1,34 @@
- /* Extra small devices (phones, 600px and down) */
- @media only screen and (max-width: 600px) {
+/* Adaptable (Responsive) */
 
- }
+@media screen and (max-width: 400px) {
+  .overlay p {
+    font-size: 18px;
+  }
 
- /* Small devices (portrait tablets and large phones, 600px and up) */
- @media only screen and (min-width: 600px) {
-    .header-nav-link {
-        font-weight: 700;
-        font-size: 16px;
-        line-height: 19px;
-    }
+  .overlay i {
+    font-size: 40px;
+  }
+}
 
-    .contenidoPrincipal-presentacion-redes-link a {
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 19px;
-    }
+@media screen and (max-width: 767px) {
+  .navbar-brand {
+    display: none;
+  }
+}
 
-    .contenidoPrincipal .container {
-        align-items: center;
-        display: flex;
-        flex-direction: row-reverse;
-    }
+@media screen and (max-width: 800px) {
+  .testimonio-imagen {
+    height: 120px;
+    width: 120px;
+  }
 
-    .contenidoPrincipal-presentacion {
-        padding-right: 1rem;
-    }
+  .testimonio-texto {
+    font-size: 18x;
+  }
+}
 
-    .contenidoPrincipal-image {
-        width: 9.2rem;
-    }
-
-    .skills-skills-list {
-        width: 29.3%;
-    }
-
-    .hobbies-hobbies-list {
-        width: 29.3%;
-    }
-
-    .training-training {
-        text-align: center;
-        display: flex;
-        justify-content: space-between;
-    }
-
-    .training-training-list {
-        padding: 4% 2%;
-        width: 29.3%;
-
-    }
-
-    .training-training-list-img {
-        width: 100px;
-    }
- }
- 
- /* Medium devices (landscape tablets, 768px and up) */
- @media only screen and (min-width: 768px) {
-    .header .container {
-        width: 78%;
-    }
-    
-    
-
-    .contenidoPrincipal-image {
-        width: 18.2rem;
-    }
-
-    .contenidoPrincipal-presentacion-titulo {
-        font-size: 52px;
-        line-height: 61px;
-        *font-size: 3.25rem;
-        *line-height: 3.8125rem; 
-    }
-
-    .contenidoPrincipal-presentacion-descripcion {
-        font-size: 22px;
-        line-height: 26px;
-    }
-
-    .contenidoPrincipal-presentacion-redes {
-        justify-content: initial;
-    }
-
-    .contenidoPrincipal-presentacion-redes-link {
-        margin-right: 20px;
-    }
-    
-    .contenidoPrincipal-presentacion-redes-link a {
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 19px;
-    }
-
-    .aboutMe-titulo {
-        font-size: 32px;
-        line-height: 38px;
-    }
-
-    .aboutMe-descripcion {
-        font-size: 16px;
-        line-height: 19px;
-    }
-
-    .subtitulo {
-        font-size: 32px;
-        line-height: 38px;   
-    }
-
-    .skills-skills {
-        *display: flex;
-        justify-content: space-between;
-    }
-
-    .skills-skills-list {
-        width: 16%;
-    }
-
-    .hobbies-hobbies {
-        display: flex;
-        justify-content: space-between;
-    }
-
-    .hobbies-hobbies-list {
-        margin: 1rem 0;
-        width: 16%;
-    }
-
-    .figure {
-        padding: 20px 0;
-    }
-
-    .projects-project {
-        display: flex;
-    }
-
-    .decoder {
-        align-items: center;
-    }
-
-    .decoder .projects-project-img {
-        width: 75%;
-    }
-
-    .hangman {
-        align-items: center;
-        flex-direction: row-reverse;
-    }
-
-
-
-    .contact .container {
-        display: flex;
-    }
-
-    .contact-form {
-        padding: 15px;
-    }
- }
- 
- /* Large devices (laptops/desktops, 992px and up) */
- @media only screen and (min-width: 992px) {
-    .header-nav-link {
-        display: initial;
-        margin-left: 15px;
-    }
-    
-    .contact-img {
-        display: initial;
-    }
- }
- 
- /* Extra large devices (large laptops and desktops, 1200px and up) */
- @media only screen and (min-width: 1200px) {
-     
- } 
+@media screen and (min-width: 700px) {
+  .hero-inferior-imagen {
+    max-width: 600px;
+  }
+}

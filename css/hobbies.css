@@ -1,33 +1,16 @@
-.hobbies-hobbies {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+/* Hobbies */
+
+.hobbies {
+  min-height: 500px;
+  padding: 30px;
 }
 
-.hobbies-hobbies-list {
-    background-color: #FFFFFF;
-    border-radius: 10px;
-    box-sizing: border-box;
-    display: inline-block;
-    *margin: 0 1rem;
-    margin: 1% 2%;
-    margin-bottom: 20px;
-    padding: 10px 20px;
-    padding-top: 80px;
-    text-align: left;
-    vertical-align: top;
-    width: 46%;
+.hobbies .card {
+  width: 80%;
+  max-width: 600px;
+  margin: 20px;
 }
 
-.hobbies-hobbies-list-img {
-    width: 40px;
-}
-
-.hobbies-hobbies-list-nombre {
-    color: #464646;
-    font-family: "Raleway";
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 19px;
+.hobbies .card-header {
+  font-weight: bold;
 }
