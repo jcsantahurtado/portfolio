@@ -1,5 +1,7 @@
 # Juan Santa's portfolio
-Alura Challenge, Oracle ONE Front-End_ 
+Alura Challenge, Oracle ONE Front-End_
+
+https://jcsantahurtado.github.io/portfolio/
 
 Portfolio: 
 - Week 1 and 2: from Figma to HTML and CSS.
